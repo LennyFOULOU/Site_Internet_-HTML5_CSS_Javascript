@@ -1,4 +1,4 @@
- {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background.jpg') no-repeat;
+    background: black;
     background-size: cover;
     background-position: center;
 }
@@ -261,5 +261,26 @@ header {
 
 }
 
+.presentation {
+    text-align: center;
+    margin-top: 80px;
+    color: #fff;
+}
 
+.presentation h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.presentation p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.presentation .slogan {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #f5a623; 
+}
 
