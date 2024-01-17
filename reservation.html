@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation d'Équipements</title>
+    <link rel="stylesheet" href="reservation.css">
+
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href ="#">Accueil</a>
+            <a href ="#">Réservation</a>
+            <a href ="#">À propos</a>
+            <a href ="#">Contact</a>
+            <a href ="#">FAQ</a>
+            <button class ="btnLogin-popup">Connexion</button>
+        </nav>
+    </header>
+<h1>Réservation d'Équipements</h1>
+
+<div>
+    <label for="equipmentType">Type d'Équipement :</label>
+    <select id="equipmentType">
+        <option value="terrestre">Équipement Terrestre</option>
+        <option value="maritime">Équipement Maritime</option>
+        <option value="aerien">Équipement Aérien</option>
+    </select>
+</div>
+<div class="date-container">
+    <li>
+        <label class="date-label" for="startDate">Date de Début :</label>
+        <input type="date" id="startDate" required>
+    </li>
+
+    <li>
+        <label class="date-label" for="endDate">Date de Fin :</label>
+        <input type="date" id="endDate" required>
+    </li>
+</div>
+<div>
+    <h2>Équipements Disponibles :</h2>
+
+    <ul id="equipmentList"></ul>
+</div>
+
+<div>
+    <label for="fullName">Nom Complet :</label>
+    <input type="text" id="fullName" required>
+</div>
+
+<div>
+    <label for="phone">Numéro de Téléphone :</label>
+    <input type="tel" id="phone" required>
+</div>
+
+<div>
+    <label for="email">Adresse E-mail :</label>
+    <input type="email" id="email" required>
+</div>
+
+
+<div>
+    <h2>Récapitulatif de la Réservation :</h2>
+    <p id="reservationDetails"></p>
+</div>
+
+<div>
+
+    <button onclick="confirmReservation()">Confirmer la Réservation</button>
+</div>
+
+<script></script>
+    function confirmReservation() {
+    }
+</script>
+
+</body>
+</html>
+
