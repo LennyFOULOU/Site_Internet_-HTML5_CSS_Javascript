@@ -7,7 +7,7 @@
 }
 
 body {
-    /* display: flex; */ /* Remove this line */
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -16,7 +16,6 @@ body {
     background-position: center;
     margin: 0;
 }
-
 
 header {
     position: fixed;
@@ -88,8 +87,7 @@ header {
 
 .wrapper {
     position: fixed;
-    width: 100%;
-    max-width: 400px; /* Set maximum width */
+    width: 400px;
     height: 440px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
@@ -106,35 +104,6 @@ header {
     left: 50%;
     transform: translateX(-50%); 
 }
-
-@media only screen and (max-width: 768px) {
-    .wrapper {
-        max-width: none; /* Remove maximum width for smaller screens */
-    }
-
-    header {
-        padding: 20px 20px; /* Adjust padding for smaller screens */
-    }
-    .navigation {
-        flex-direction: column;
-        align-items: flex-start;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        background: #162938;
-        width: 100%;
-        display: none;
-    }
-    .navigation.active {
-        display: flex;
-    }
-    .navigation a {
-        margin: 10px 0;
-        font-size: 1.2em;
-    }
-}
-
-
 
 .wrapper.active-popup {
     transform: scale(1);
@@ -330,11 +299,10 @@ header {
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    text-align: left;
+    text-align: left; /* Nouvelle ligne ajoutée pour aligner le texte à gauche */
 }
-
 
 .photo {
     position: relative;

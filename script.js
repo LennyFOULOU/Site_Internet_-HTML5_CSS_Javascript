@@ -42,3 +42,4 @@ window.addEventListener('scroll', function() {
         headerPlaceholder.style.display = 'none';
     }
 });
+
