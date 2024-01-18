@@ -13,7 +13,7 @@ body {
 
 header {
     position: fixed;
-    background-color: #000;
+    background-color: #162938;
     top: 0;
     left: -50;
     width: 100%;
@@ -92,7 +92,7 @@ div {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #000;
+    color: #162938;
 }
 
 select, input, textarea {
@@ -103,7 +103,7 @@ select, input, textarea {
 }
 
 button {
-    background-color: #000;
+    background-color: #162938;
     color: #fff;
     padding: 10px 20px;
     border: none;

@@ -7,7 +7,7 @@
 }
 
 body {
-    /* display: flex; */ /* Remove this line */
+  
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -89,7 +89,7 @@ header {
 .wrapper {
     position: fixed;
     width: 100%;
-    max-width: 400px; /* Set maximum width */
+    max-width: 400px; 
     height: 440px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
@@ -109,11 +109,11 @@ header {
 
 @media only screen and (max-width: 768px) {
     .wrapper {
-        max-width: none; /* Remove maximum width for smaller screens */
+        max-width: none; 
     }
 
     header {
-        padding: 20px 20px; /* Adjust padding for smaller screens */
+        padding: 20px 20px; 
     }
     .navigation {
         flex-direction: column;
@@ -329,15 +329,21 @@ header {
 }
 
 .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
 .photo {
     position: relative;
+    width: calc(50% - 10px); /* Adjust the width as needed */
+    margin-bottom: 20px;
 }
 
 .photo img {
@@ -368,6 +374,7 @@ header {
 .comment p {
     margin: 0;
 }
+
 
 .header-placeholder {
     height: 80px; 

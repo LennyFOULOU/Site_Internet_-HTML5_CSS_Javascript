@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
         event.stopPropagation();
         wrapper.classList.remove('active-popup');
     }
+    function hideLoginForm() {
+        wrapper.classList.remove('active-popup');
+    }
 
     registerLink.addEventListener('click', function (event) {
         openLoginForm(event);
@@ -26,20 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
         openLoginForm(event);
         wrapper.classList.remove('active');
     });
+    closeLoginForm();
 
     btnPopup.addEventListener('click', openLoginForm);
-
     iconClose.addEventListener('click', closeLoginForm);
-});
-
-window.addEventListener('scroll', function() {
-    var headerPlaceholder = document.querySelector('.header-placeholder');
-    var header = document.querySelector('header');
-    
-    if (window.scrollY >= header.offsetTop) {
-        headerPlaceholder.style.display = 'block';
-    } else {
-        headerPlaceholder.style.display = 'none';
-    }
 });
 
