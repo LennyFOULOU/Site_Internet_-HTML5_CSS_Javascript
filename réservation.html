@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Pegasus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header-placeholder"></div>
+    <header>
+        <h2 class="logo"><img src="logo1.png" alt="Votre Logo" width="100"></h2>
+
+        <nav class="navigation">
+            <a href ="index.html">Acceuil</a>
+            <a href ="réservation.html">Réservation</a>
+            <a href ="equipement.html">Nos équipements</a>
+            <a href ="contact.html">Contact</a>
+            <a href ="faq.html">FAQ</a>
+        </nav>
+    </header>    
+    <section class="reservation">
+        <div class="reservation-container">
+            <h1>Réservez votre véhicule</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="firstName">Prénom :</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Nom :</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse e-mail :</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="vehicleType">Type de véhicule :</label>
+                    <select name="vehicleType" id="vehicleType" required>
+                        <option value="camping-car">Camping-car</option>
+                        <option value="caravane">Caravane</option>
+                        <option value="van">Van aménagé</option>
+                        <option value="montgolfiere">Montgolfière</option>
+                        <option value="jet-ski">jet-ski</option>
+                        <option value="moto-neige">moto-neige</option>
+                        <option value="ski">ski</option>
+                        <option value="luge">Luge</option>
+                        <option value="buggy">Buggy</option>
+
+                        <!-- Ajoutez d'autres options selon vos besoins -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="startDate">Date de début :</label>
+                    <input type="date" name="startDate" id="startDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="endDate">Date de fin :</label>
+                    <input type="date" name="endDate" id="endDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="additionalInfo">Informations supplémentaires :</label>
+                    <textarea name="additionalInfo" id="additionalInfo" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Réserver</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>À propos de nous</h2>
+                <p>Explorez vos vacances avec Pegasus, votre partenaire idéal pour la location d'équipement de loisir.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contactez-nous</h2>
+                <p>Email: contact@pegasus.com</p>
+                <p>Téléphone: +123 456 789</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="facebook.png" alt="Facebook" width="30" height="30"></a>
+                    <a href="#" target="_blank"><img src="twitter.png" alt="Twitter" width="30" height="30"></a>
+                    <a href="#" target="_blank"><img src="instagram.png" alt="Instagram" width="30" height="30"></a>
+                    <!-- Ajoutez d'autres images selon vos besoins -->
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Liens rapides</h2>
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="réservation.html">Réservation</a></li>
+                    <li><a href="equipement.html">Nos équipements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pegasus. Tous droits réservés.</p>
+            <p>Créez par Lenny FOULOU, Khalid CHENOUNA et Yanis RECHACHI</p>
+
+        </div>
+    </footer>
+    <button id="backToTopBtn" title="Retour en haut">↑</button>
+<script src="script.js"></script>
+    </body>
+
+

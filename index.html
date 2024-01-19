@@ -3,85 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1,width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <title>Pegasus</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
 </head>
 
 <body>
+
+
     <div class="header-placeholder"></div>
     <header>
-        <h2 class="logo">Logo</h2>
+        <h2 class="logo"><img src="logo1.png" alt="Votre Logo" width="100"></h2>
+        <div class="menu-toggle">
+            <img src="menu.png" alt="Menu Burger" width="30">
+        </div>
         <nav class="navigation">
-            <a href ="#">Acceuil</a>
-            <a href ="#">Réservation</a>
-            <a href ="#">À propos</a>
-            <a href ="#">Contact</a>
-            <a href ="#">FAQ</a>
-            <button class ="btnLogin-popup">Connexion</button>
+            <a href ="index.html">Acceuil</a>
+            <a href ="réservation.html">Réservation</a>
+            <a href ="equipement.html">Nos équipements</a>
+            <a href ="contact.html">Contact</a>
+            <a href ="faq.html">FAQ</a>
         </nav>
-    </header>
-    <div class="wrapper">
-        <span class="icon-close">
-            <ion-icon name="close-outline"></ion-icon>
-    </span class>
-        <div class="form-box login">
-            <h2>Connexion</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Mot de passe</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox"> Se souvenir de moi</label>
-                    <a href="#">Mot de passe oublié ?</a>
-                </div>
-                    <button type="submit" class="btn"> Connexion</button>
-                    <div class="login-register"> 
-                        <p>Vous n'avez pas de compte ?<a href ="#" class="register-link"> S'inscire</a></p>
-                    </div>
-            </form>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-
-        <div class="form-box register">
-            <h2>S'inscrire</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="person"></ion-icon>
-                    </span>
-                    <input type="text" required>
-                    <label>Nom d'utilisateur</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Mot de passe</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox"> J'ai compris les conditions d'utilisations</label>
-                </div>
-                    <button type="submit" class="btn"> S'inscrire</button>
-                    <div class="login-register"> 
-                        <p>Vous avez déjà un compte ?<a href ="#" class="login-link"> Connexion</a></p>
-                    </div>
-            </form>
+    
+        <div class="mobile-menu">
+            <a href="index.html">Acceuil</a>
+            <a href="réservation.html">Réservation</a>
+            <a href="equipement.html">Nos équipements</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
         </div>
-    </div>
+    </header>    
+    
     <section class="presentation">
+        <img src="logo2.png" alt="Votre Logo" width="500" style="margin-left: auto; margin-right: auto;">
+
         <h1>Bienvenue chez Pegasus</h1>
         <p>
             Explorez vos vacances avec Pegasus, votre partenaire idéal pour la location d'équipement de loisir. 
@@ -98,34 +61,37 @@
         <p class="slogan">Vivez l'aventure, louez avec Pegasus!</p>
     </section>
     <section class="gallery">
-        <h2>Nos Photos</h2>
+        <h2>Nos meilleures offres</h2>
         <div class="photo-grid">
             <div class="photo">
                 <img src="montgolfiere.jpg" alt="Montgolfière">
                 <div class="comment">
-                    <h3>Commentaire 1</h3>
-                    <p>Ceci est le commentaire pour la photo de la montgolfière.</p>
+                    <h3>Ciel</h3>
+                    <p>Envolez-vous vers l'extraordinaire avec notre montgolfière de rêve ! Profitez d'une vue panoramique à couper le souffle, glissant doucement dans le ciel. Laissez-vous emporter par la magie des hauteurs et créez des souvenirs uniques en volant au gré des vents. Offrez-vous une aventure céleste inoubliable avec notre montgolfière !</p>
                 </div>
             </div>
             <div class="photo">
                 <img src="jetski.jpg" alt="Jet Ski">
                 <div class="comment">
-                    <h3>Commentaire 2</h3>
-                    <p>Ceci est le commentaire pour la photo du jet ski.</p>
+                    <h3>Mer</h3>
+                    <p>Découvrez l'ultime sensation de liberté aquatique avec notre jet-ski ! Puissant, agile et conçu pour l'aventure, il offre des moments inoubliables sur l'eau. Embarquez dès maintenant pour des escapades palpitantes et des souvenirs pleins de vitesse et de plaisir. Le jet-ski, c'est la promesse d'une expérience aquatique exceptionnelle !
+                    </p>
                 </div>
             </div>
             <div class="photo">
                 <img src="motoneige.jpg" alt="Motoneige">
                 <div class="comment">
-                    <h3>Commentaire 3</h3>
-                    <p>Ceci est le commentaire pour la photo de la motoneige.</p>
+                    <h3>Neige</h3>
+                    <p>
+                        Vibrez au rythme de l'hiver avec notre moto-neige ultime ! Conçue pour la puissance et l'adrénaline, elle vous propulse à travers les paysages enneigés comme jamais. Explorez des terrains gelés avec confiance et ressentez l'excitation glacée de la vitesse. Préparez-vous à une aventure hivernale mémorable et domptez les étendues enneigées avec notre moto-neige haute performance !</p>
                 </div>
             </div>
             <div class="photo">
                 <img src="buggy.jpg" alt="Buggy">
                 <div class="comment">
-                    <h3>Commentaire 4</h3>
-                    <p>Ceci est le commentaire pour la photo du buggy.</p>
+                    <h3>Désert</h3>
+                    <p>
+                        Plongez au cœur du désert avec notre buggy d'exception ! Conçu pour la puissance et l'aventure, il vous propulse à travers les dunes comme jamais auparavant. Explorez les paysages arides en toute confiance, ressentant l'excitation palpitante de la vitesse. Préparez-vous à une aventure désertique inoubliable et maîtrisez les étendues de sable avec notre buggy tout-terrain haute performance </p>
                 </div>
             </div>
         </div>
@@ -133,5 +99,43 @@
     
     
 
-  
+  <footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Mentions légales</h2>
+            <p><a href="mention.html">Mentions légales</a></p>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contactez-nous</h2>
+            <p>Email: contact@pegasus.com</p>
+            <p>Téléphone: +123 456 789</p>
+        </div>
+        <div class="social-icons">
+            <h2>Réseaux sociaux</h2>
+            <a href="#" target="_blank"><img src="facebook.png" alt="Facebook" width="30" height="30"></a>
+            <a href="#" target="_blank"><img src="twitter.png" alt="Twitter" width="30" height="30"></a>
+            <a href="#" target="_blank"><img src="instagram.png" alt="Instagram" width="30" height="30"></a>
+        </div>
+       
+        <div class="footer-section links">
+            <h2>Liens rapides</h2>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="réservation.html">Réservation</a></li>
+                <li><a href="equipement.html">Nos équipements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Pegasus. Tous droits réservés.</p>
+        <p>Créez par Lenny FOULOU, Khalid CHENOUNA et Yanis RECHACHI</p>
+    </div>
+</footer>
+<button id="backToTopBtn" title="Retour en haut">↑</button>
+<script src="script.js"></script>
+
+
+
 </body>
