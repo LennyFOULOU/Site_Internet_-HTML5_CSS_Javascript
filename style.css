@@ -393,3 +393,61 @@
         }
     }
 
+    .hidden {
+        display: none;
+    }
+
+    .equipment-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+      
+    .equipment-item {
+        width: calc(50% - 10px); /* 10px de marge entre les éléments */
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+      
+    .equipment-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    body.no-margin .theme-button {
+        margin-bottom: 100px; /* Ajoutez la marge que vous préférez */
+      }
+
+    .equipment-item {
+        width: calc(50% - 10px); /* Utilisez 50% pour deux équipements par ligne, ajustez si nécessaire */
+        margin-bottom: 20px;
+        box-sizing: border-box; /* Assurez-vous que la largeur inclut la marge */
+        background-color: rgba(255, 255, 255, 0.7); /* Ajoutez une couleur de fond semi-transparente pour améliorer la lisibilité du texte */
+        padding: 15px; /* Ajoutez une marge intérieure pour améliorer la lisibilité du texte */
+    }    
+    
+    .ciel-background {
+        background-image: url('ciel_background.jpeg'); /* Remplacez 'ciel_background.jpg' par le chemin de votre image de fond */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px; /* Ajoutez une marge intérieure pour améliorer la lisibilité du contenu */
+    }
+      
+    
+    .mer-background {
+        background-image: url('mer_background.jpg'); /* Remplacez 'mer_background.jpg' par le chemin de votre image de fond pour la mer */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .neige-background {
+        background-image: url('neige_background.jpg'); /* Remplacez 'chemin_vers_l_image.jpg' par le chemin de votre image de fond pour la neige */
+        padding: 20px; /* Ajoutez une marge intérieure pour améliorer la lisibilité du contenu */
+    }
+
+    .desert-background {
+        background-image: url('desert_background.jpg'); /* Remplacez 'chemin_vers_l_image_desert.jpg' par le chemin de votre image de fond pour le désert */
+        padding: 20px; /* Ajoutez une marge intérieure pour améliorer la lisibilité du contenu */
+    }

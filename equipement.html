@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Pegasus</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+
+    <div class="header-placeholder"></div>
+    <header>
+        <h2 class="logo"><img src="logo1.png" alt="Votre Logo" width="100"></h2>
+        <div class="menu-toggle">
+            <img src="menu.png" alt="Menu Burger" width="30">
+        </div>
+        <nav class="navigation">
+            <a href ="index.html">Acceuil</a>
+            <a href ="réservation.html">Réservation</a>
+            <a href ="equipement.html">Nos équipements</a>
+            <a href ="contact.html">Contact</a>
+            <a href ="faq.html">FAQ</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <div class="mobile-menu">
+            <a href="index.html">Acceuil</a>
+            <a href="réservation.html">Réservation</a>
+            <a href="equipement.html">Nos équipements</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </header>    
+    
+    <section class="presentation">
+        <img src="logo2.png" alt="Votre Logo" width="500" style="margin-left: auto; margin-right: auto;">
+      
+        <h2>Voici la liste de nos équipements</h2>
+        <p>Choisissez le thème :</p>
+      
+        <div class="theme-buttons">
+          <button class="theme-button">Ciel</button>
+          <button class="theme-button">Mer</button>
+          <button class="theme-button">Neige</button>
+          <button class="theme-button">Désert</button>
+        </div>
+      
+        <div class="theme-contents">
+            <div class="theme-content ciel">
+                <h3>Ciel</h3>
+                <p>Explorez les hauteurs avec nos équipements aériens. Profitez de vues panoramiques et d'une expérience céleste inoubliable.</p>
+        
+                <div class="equipment-list">
+                    <div class="equipment-item">
+                        <img src="montgolfiere.jpg" alt="Montgolfière">
+                        <div class="equipment-info">
+                            <h4>Montgolfière</h4>
+                            <p>Envolez-vous vers l'extraordinaire avec notre montgolfière de rêve ! Profitez d'une vue panoramique à couper le souffle, glissant doucement dans le ciel.</p>
+                            <p>Âge minimum requis: 8 ans</p>
+                            <p>Tarif : 150€/h</p>
+                        </div>
+                    </div>
+        
+                    <!-- Ajoutez un autre équipement dans la même ligne -->
+                    <div class="equipment-item">
+                        <img src="ULM.png" alt="Autre Image">
+                        <div class="equipment-info">
+                            <h4>( ! MISE EN PLACE ETE 2024 ! ) ULM</h4>
+                            <p>Cet Aéronef ultraléger motorisé va vous faire sentir tel un oiseau dans le ciel ! Volez parmi les volatiles et sentez l'air parcourir votre visage, tel un homme libre !</p>
+                            <p>Âge minimum requis: 14 ans, Accompagné d'un accompagnateur professionnel</p>
+                            <p>Tarif : 125€/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theme-content mer hidden">
+                <!-- Contenu pour le thème Mer -->
+                <h3>Mer</h3>
+                <p>Plongez dans l'aventure aquatique avec nos équipements marins. Ressentez la liberté et l'excitation sur l'eau avec nos offres exceptionnelles.</p>
+                <div class="equipment-list">
+                    <div class="equipment-item">
+                        <img src="jetski.jpg" alt="Jet Ski">
+                        <div class="equipment-info">
+                            <h4>Jet Ski</h4>
+                            <p>Découvrez l'ultime sensation de liberté aquatique avec notre jet-ski ! 
+                                Puissant, agile et conçu pour l'aventure, il offre des moments inoubliables sur l'eau. 
+                                Embarquez dès maintenant pour des escapades palpitantes et des souvenirs pleins de vitesse et de plaisir. 
+                                Le jet-ski, c'est la promesse d'une expérience aquatique exceptionnelle !</p>
+
+                            <p>Âge minimum requis: 12 ans accompagné, 16 ans non accompagné</p>
+                            <p>Tarif : 60€/30 min | 35€/15min</p>
+                        </div>
+                    </div>
+
+                    <div class="equipment-item">
+                        <img src="bateau_luxe.png" alt="Bateau de Luxe">
+                        <div class="equipment-info">
+                            <h4>Bateau de luxe a haute vitesse</h4>
+                            <p>Embarquez à bord de notre bateau de luxe à haute vitesse pour une expérience maritime exceptionnelle. Doté de performances incomparables, ce navire vous offre une aventure palpitante sur les vagues.</p>
+                            <p>Que vous cherchiez l'adrénaline des virages rapides ou simplement une croisière élégante, notre bateau de luxe répondra à toutes vos attentes.</p>
+
+                            <p>Âge minimum requis: 18 ans, Nb max personnes : 8 pers</p>
+                            <p>Tarif : 350€/h </p>
+                        </div>
+                    </div>
+
+                    <div class="equipment-item">
+                        <img src="bateau_familiale.jpg" alt="Bateau familiale">
+                        <div class="equipment-info">
+                            <h4>Bateau familiale</h4>
+                            <p>Profitez de moments mémorables en famille à bord de notre bateau familial spacieux et confortable. Ce navire est conçu pour offrir une expérience maritime détendue et sécurisée pour tous les membres de la famille.</p>
+                            <p>Que vous souhaitiez explorer la côte, pêcher tranquillement ou simplement vous détendre au soleil, notre bateau familial est l'option idéale.</p>
+
+                            <p>Âge minimum requis: Tout âges, 16 ans accompagné</p>
+                            <p>Tarif : 100€/h </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="theme-content neige">
+                <h3>Neige</h3>
+                <p>Vibrez au rythme de l'hiver avec nos équipements conçus pour les paysages enneigés. Profitez d'une aventure hivernale mémorable.</p>
+        
+                <div class="equipment-list">
+                    <div class="equipment-item">
+                        <img src="motoneige.jpg" alt="Motoneige">
+                        <div class="equipment-info">
+                            <h4>Motoneige</h4>
+                            <p>Découvrez l'adrénaline hivernale avec notre moto-neige ultime, conçue pour dompter les paysages enneigés. Vibrez au rythme de l'aventure et explorez des terrains gelés avec une puissance inégalée</p>
+                            <p>Âge minimum requis: 16 ans</p>
+                            <p>Tarif : 150€/h</p>
+                        </div>
+                    </div>
+        
+                    <!-- Ajoutez un autre équipement dans la même ligne -->
+                    <div class="equipment-item">
+                        <img src="tout-terrain-neige.jpeg" alt="Tout terrain électrique">
+                        <div class="equipment-info">
+                            <h4>Tout Terrain électrique</h4>
+                            <p>Domptez les étendues enneigées avec notre tout-terrain électrique spécial neige. 
+                               Silencieux et puissant, ce véhicule vous offre une aventure hivernale inoubliable, parfait pour explorer les paysages enneigés en toute tranquillité.</p>
+                            <p>Âge minimum requis: 14 ans</p>
+                            <p>Tarif : 65€/h </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+          <div class="theme-content desert">
+                <h3>Desert</h3>
+                <p>Explorez les vastes étendues désertiques avec nos équipements tout-terrain. Vivez une aventure désertique inoubliable.</p>
+        
+                <div class="equipment-list">
+                    <div class="equipment-item">
+                        <img src="buggy.jpg" alt="Montgolfière">
+                        <div class="equipment-info">
+                            <h4>Buggy tout terrain</h4>
+                            <p>Découvrez l'excitation ultime du désert avec notre buggy tout-terrain. Conçu pour la puissance et l'aventure, il vous propulse à travers les dunes pour une expérience palpitante et inoubliable.</p>
+                            <p>Conditions : Permis B confirmé (3ans), tous ages passagers</p>
+                            <p>Tarif par heure: 125 €</p>
+                        </div>
+                    </div>
+        
+                    <!-- Ajoutez un autre équipement dans la même ligne -->
+                    <div class="equipment-item">
+                        <img src="mystere.jpg" alt="Qui est ce ?">
+                        <div class="equipment-info">
+                            <h4>ARRIVE PROCHAINEMENT</h4>
+                            <p>Restés informés, on vous tiendra au jus !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      
+        <p class="slogan">Vivez l'aventure, louez avec Pegasus!</p>
+      </section>
+       
+    
+    
+
+  <footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Mentions légales</h2>
+            <p><a href="mention.html">Mentions légales</a></p>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contactez-nous</h2>
+            <p>Email: contact@pegasus.com</p>
+            <p>Téléphone: +123 456 789</p>
+        </div>
+        <div class="social-icons">
+            <h2>Réseaux sociaux</h2>
+            <a href="#" target="_blank"><img src="facebook.png" alt="Facebook" width="30" height="30"></a>
+            <a href="#" target="_blank"><img src="twitter.png" alt="Twitter" width="30" height="30"></a>
+            <a href="#" target="_blank"><img src="instagram.png" alt="Instagram" width="30" height="30"></a>
+        </div>
+       
+        <div class="footer-section links">
+            <h2>Liens rapides</h2>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="réservation.html">Réservation</a></li>
+                <li><a href="equipement.html">Nos équipements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Pegasus. Tous droits réservés.</p>
+        <p>Créez par Lenny FOULOU, Khalid CHENOUNA et Yanis RECHACHI</p>
+    </div>
+</footer>
+<button id="backToTopBtn" title="Retour en haut">↑</button>
+<script src="script.js"></script>
+
+
+
+</body>
